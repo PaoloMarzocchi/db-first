@@ -9,31 +9,6 @@ DB_NAME: cars_dealer
 
 Table name: used_cars
 
-ID  
-Data immatricolazione           
-Vin 
-Numero di telaio 
-Targa veicolo 
-Marca
-Modello
-Alimentazione
-Cilindrata
-Prezzo
-Km percorsi
-N° porte
-N° posti
-Consumi
-Mano
-Cambio
-N° marce
-Descrizione
-Peso
-Foto
-Colore
-Capienza bagagliaio
-
-
-
 - `id` | NOTNULL | UNIQUE | BIGINT
 - `registration_date` | NOTNULL | DATE | DEFAULT('YYYY/MM/DD')
 - `vin` (Vehicle Identification Number) | NOTNULL | UNIQUE
