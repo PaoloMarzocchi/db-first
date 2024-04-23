@@ -9,15 +9,15 @@ DB_NAME: cars_dealer
 
 Table name: used_cars
 
-- `id` | NOTNULL | UNIQUE | BIGINT
-- `registration_date` | NOTNULL | DATE | DEFAULT('YYYY/MM/DD')
+- `id` | NOTNULL | UNIQUE | BIGINT| AUTOINCREMENT | PRIMARY KEY
+- `registration_date` | NOTNULL | DATE 
 - `vin` (Vehicle Identification Number) | NOTNULL | UNIQUE
 - `vehicle_plate` | NULL | UNIQUE | CHAR(7)
-- `brand` | NOTNULL | VARCHAR(30) | DEFAULT('Car Brand')
-- `model` | NOTNULL | VARCHAR(50) | DEFAULT('Car Model')
+- `brand` | NOTNULL | VARCHAR(30) 
+- `model` | NOTNULL | VARCHAR(50)  
 - `fuel` | NULL | VARCHAR(20)
 - `displacement` | NULL | SMALLINT
-- `price` | NULL | MEDIUMINT
+- `price` | NULL | float(7,2)
 - `mileage` | NULL | MEDIUMINT
 - `doors_number` | NULL | TINYINT
 - `seats_number` | NULL | TINYINT
@@ -26,7 +26,7 @@ Table name: used_cars
 - `transmission` | NULL | VARCHAR(20)
 - `gears_numb` | NULL | TINYINT
 - `weight` | NULL | SMALLINT
-- `photos` | NULL | VARCHAR(255)
+- `photo` | NULL | VARCHAR(255) | default('image')
 - `color` | NULL | VARCHAR(20)
 - `cargo_capacity` | NULL | VARCHAR(20)
 - `description` | NULL | TEXT
